@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 
-const App = () => {
 
-    const [count, setCount] = useState(5);
+const App = () => {
+    const [count, setCount] = useState(0);
     
     const increase = () => {
         setCount(count + 1);
@@ -15,10 +15,10 @@ const App = () => {
     return (
         <div className='container'>
             <h1>{count}</h1>
-            <button onClick={increase}>+</button>
             <button onClick={decrease}>-</button>
+            <button onClick={increase}>+</button>
         </div>
-  );
+    );
 }
 
 export default App;
